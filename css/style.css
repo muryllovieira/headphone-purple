@@ -7,19 +7,28 @@ body{
     "main" 
     "footer";
     grid-template-rows: 100px 1fr 100px;
+    padding-right: 100px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header{
-    background-color: lightpink;
     grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main{
-    background-color: lightblue;
     grid-area: main;
+    display: grid;
+    grid-template-areas:
+    "description product social-media";
+    grid-template-columns: 380px 1fr 48px;
+    padding-left: 100px;
 }
 
 footer{
-    background-color: lightcoral;
     grid-area: footer;
+    display: flex;
+    gap: 2px;
 }
