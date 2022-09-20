@@ -17,6 +17,7 @@
     place-items: center;
 }
 .product__image{
+    width: auto;
     height: 60%;
 }
 .product__navegation-container{
